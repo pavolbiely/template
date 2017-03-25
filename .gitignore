@@ -1,0 +1,9 @@
+/engine/libs/*
+/engine/log/*
+/engine/temp/*
+/assets/libs/*
+/.idea
+/.vscode
+/.gitmodules
+/composer.lock
+/favicon.ico

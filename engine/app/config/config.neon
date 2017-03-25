@@ -1,0 +1,26 @@
+http:
+    proxy: 127.0.0.1
+
+application:
+    errorPresenter: Error
+    mapping:
+        *: App\*Module\Presenters\*Presenter
+
+mail:
+    smtp: true
+    host: 127.0.0.1
+    port: 25
+    username: "user"
+    password: "pass"
+    secure: "ssl"
+    timeout: 10
+
+database:
+    default:
+        dsn:
+
+tracy:
+    strictMode: true
+
+services:
+    router: App\RouterFactory::createRouter

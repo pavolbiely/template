@@ -1,0 +1,19 @@
+{
+	"name": "Example",
+	"version": "0.0.1",
+    "authors": [
+        {
+            "name": "Webtec s.r.o.",
+            "email": "info@webtec.sk",
+            "homepage": "http://www.webtec.sk"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "nette/nette": "2.4.x",
+		"nette/tester": "@dev"
+    },
+	"config": {
+		"vendor-dir": "engine/libs"
+	}
+}
