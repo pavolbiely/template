@@ -17,10 +17,20 @@ mail:
 
 database:
     default:
-        dsn:
+        dsn: "pgsql:host=127.0.0.1;port=5432;dbname=test"
+        user: postgres
+        password: root
+
+parameters:
+    recaptcha:
+        sitekey: ""
+        secret: ""
 
 tracy:
     strictMode: true
 
 services:
     router: App\RouterFactory::createRouter
+    database: @database.default
+    translator:
+        class: App\Locale\Translator
